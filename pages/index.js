@@ -106,7 +106,7 @@ export default function Home() {
               value={state.values.message}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`${(!state.values.message && touched.email) ? "error" : ""}`}
+              className={`${(!state.values.message && touched.message) ? "error" : ""}`}
             />
           </div>
 
