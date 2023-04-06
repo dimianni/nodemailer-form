@@ -10,11 +10,11 @@ const roboto = Roboto({
 const initValues = { email: "", message: "" }
 const initState = { isLoading: false, error: "", values: initValues }
 
+
 export default function Home() {
 
   const [state, setState] = useState(initState)
   const [touched, setTouched] = useState({})
-
 
   const handleChange = ({ target }) => {
     setState((prevState) => {
@@ -41,8 +41,6 @@ export default function Home() {
   async function onSubmit(e) {
 
     e.preventDefault()
-
-    console.log("button clicked");
 
     setState((prevState) => {
       return {
@@ -110,9 +108,12 @@ export default function Home() {
             />
           </div>
 
-
           <button onClick={onSubmit} disabled={(!state.values.message || !state.values.email) ? true : false}>Send</button>
         </form>
+
+        <a href='mailto:info@dimianni.com'>
+          info@dimianni.com
+        </a>
       </main>
     </>
   )
