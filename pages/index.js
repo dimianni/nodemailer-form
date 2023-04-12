@@ -114,6 +114,9 @@ export default function Home() {
         <a href='mailto:info@dimianni.com'>
           info@dimianni.com
         </a>
+        <a href='mailto:contact@dimianni.com'>
+          contact@dimianni.com
+        </a>
       </main>
     </>
   )
